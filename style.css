@@ -54,3 +54,13 @@ header p {
 .buttons-container button:active {
     border: 3px #3A69D2 solid;
 }
+
+#list-title {
+    padding: 0 48px;
+}
+
+#list-title h2 {
+    margin: 0 38px;
+    font-size: 12px;
+    color: #D5D4D8;
+}
