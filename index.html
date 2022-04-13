@@ -13,15 +13,16 @@
             <p style="font-size:16px; text-align: center;">Thank you for choosing GoodCorp, LLC!</p>
         </header>
         <div class="buttons-container">
-            <button class="button">Wash Car: $10</button>
-            <button class="button">Mow Lawn: $20</button>
-            <button class="button">Pull Weeds: $30</button>
+            <button class="button" name="Car Wash" value=10 onclick="addItem(this.name, this.value)">Wash Car: $10</button>
+            <button class="button" name="Mow Lawn" value=10 onclick="addItem(this.name, this.value)">Mow Lawn: $20</button>
+            <button class="button" name="Pull Weeds" value=10 onclick="addItem(this.name, this.value)">Pull Weeds: $30</button>
         </div>
         <div id="list-title" style="width: 100%; display: flex; justify-content: space-between;">
             <h2>TASK</h2>
             <h2>TOTAL</h2>
         </div>
         <ul id="items"></ul>
+        <hr>
 
     </main>
     <script src="script.js"></script>
