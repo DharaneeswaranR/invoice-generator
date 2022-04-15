@@ -13,9 +13,9 @@
             <p style="font-size:16px; text-align: center;">Thank you for choosing GoodCorp, LLC!</p>
         </header>
         <div class="buttons-container">
-            <button class="button" name="Car Wash" value=10 onclick="addItem(this.name, this.value)">Wash Car: $10</button>
-            <button class="button" name="Mow Lawn" value=10 onclick="addItem(this.name, this.value)">Mow Lawn: $20</button>
-            <button class="button" name="Pull Weeds" value=10 onclick="addItem(this.name, this.value)">Pull Weeds: $30</button>
+            <button class="button" name="Car Wash" onclick="addItem(this.name)">Wash Car: $10</button>
+            <button class="button" name="Mow Lawn" onclick="addItem(this.name)">Mow Lawn: $20</button>
+            <button class="button" name="Pull Weeds" onclick="addItem(this.name)">Pull Weeds: $30</button>
         </div>
         <div id="list-title" style="width: 100%; display: flex; justify-content: space-between;">
             <h2>TASK</h2>
@@ -23,6 +23,17 @@
         </div>
         <ul id="items"></ul>
         <hr>
+        <div id="list-title" style="width: 100%; display: flex; justify-content: space-between;">
+            <h2>NOTES</h2>
+            <h2>TOTAL AMOUNT</h2>
+        </div>
+        <div id="total-container" style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
+            <p>We accept cash, credit card, or PayPal</p>
+            <p id="total-cost" style="font-size: 36px">$0</p>
+        </div>
+        <div class="reset-btn-container">
+            <button id="reset-btn"><img src="static/mail.png" alt="mail icon" style="margin-right: 10px;">Send Invoice</button>
+        </div>
 
     </main>
     <script src="script.js"></script>
