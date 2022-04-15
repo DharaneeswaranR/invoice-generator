@@ -12,6 +12,8 @@ body {
 
 main {
     width: 550px;
+    height: 719px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,10 +55,6 @@ header p {
 
 .buttons-container button:active {
     border: 3px #3A69D2 solid;
-}
-
-#list-title {
-    padding: 0 48px;
 }
 
 #list-title h2 {
@@ -112,4 +110,24 @@ hr {
     margin: 25px;
     border-style: none;
     border-top: 1px solid #C3C6DB;
+}
+
+#total-container p {
+    font-size: 12px;
+    padding: 20px 38px;
+}
+
+#reset-btn {
+    width: 480px;
+    height: 44px;
+    background: #3A69D2;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#reset-btn:active {
+    background-color: #5880d6;
 }
