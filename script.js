@@ -1,14 +1,14 @@
 let items = []
 let totalCost = 0
+const itemsList = document.getElementById("items")
+const costEl = document.getElementById("total-cost")
+const resetBtn = document.getElementById("reset-btn")
 
 const cost = {
     "Car Wash": 10,
     "Mow Lawn": 20,
     "Pull Weeds": 30,
 }
-
-const itemsList = document.getElementById("items")
-//const itemsButton = document.querySelector(".button")
 
 function render() {
     let html = ""
@@ -29,6 +29,7 @@ function render() {
     }
 
     itemsList.innerHTML = html
+    costEl.textContent = '$' + totalCost
 }
 
 function addItem(item) {
@@ -41,5 +42,12 @@ function addItem(item) {
 
 function removeItem(item) {
     items.splice(items.indexOf(item), 1)
+    totalCost -= cost[item]
     render()
 }
+
+resetBtn.addEventListener("click", () => {
+    totalCost = 0;
+    items = []
+    render()
+})
